@@ -1,8 +1,9 @@
 noseX = 0;
 noseY = 0;
+var clown_nose;
 
 function preload() {
-
+    clown_nose = loadImage("https://i.postimg.cc/wvZZ4CPN/clown-nose.png");
 }
 
 function setup() {
@@ -21,6 +22,7 @@ function draw() {
     fill(96, 215, 197);
     stroke(96, 215, 197);
     circle(noseX, noseY, 20);
+    image(clown_nose, noseX, noseY, 30, 30);
 }
 
 function take_snapshot() {
